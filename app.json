@@ -1,0 +1,27 @@
+{
+  "name": "Keep Alive - Magneto",
+  "description": "Heroku app to keep your other heroku/glitch/repl apps alive by ping them on a specific interval.",
+  "repository": "https://github.com/sketch-dev/keep-alive",
+  "keywords": ["get request", "ping site", "keep alive"],
+  "env": {
+     "URLS": {
+      "description": "enter your site urls, seperated by space. Examples:-",
+      "value": "https://google.com https://fb.com https://github.com"
+    },
+     "INTERVAL": {
+      "description": "set interval time between two pings in seconds. Default is 2 minutes",
+      "value": "120"
+    }
+   },
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
