@@ -1,5 +1,5 @@
 {
-  "name": "Keep Alive - Magneto",
+  "name": "Ping Uptimer by Lurkbtw#7634",
   "description": "Heroku app to keep your other heroku/glitch/repl apps alive by ping them on a specific interval.",
   "repository": "https://github.com/sketch-dev/keep-alive",
   "keywords": ["get request", "ping site", "keep alive"],
